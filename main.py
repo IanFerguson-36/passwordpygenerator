@@ -29,5 +29,4 @@ def password_params():
     if password_special == "y":
         selected_chars.extend(special_char_list)
 
-
 password_params()
