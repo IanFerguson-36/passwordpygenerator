@@ -9,6 +9,7 @@ special_char_list = ["!", "@", "#", "$", "%", "&"]
 selected_chars = []
 
 
+
 def password_params():
     password_length = input("How many characters would you like your password to be? ")
     password_length = int(password_length)
@@ -29,4 +30,26 @@ def password_params():
     if password_special == "y":
         selected_chars.extend(special_char_list)
 
-password_params()
+    return password_length
+
+
+final_length = password_params()
+print(selected_chars)
+
+
+def generate_password(num):
+
+
+
+# generate_password(final_length)
+
+
+
+
+
+
+
+
+
+
+
