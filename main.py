@@ -28,7 +28,7 @@ def password_params():
     password_special = input("Would you like special characters in your password? y/n ")
     if password_special == "y":
         selected_chars.extend(special_char_list)
-    print(selected_chars)
+
 
 
 password_params()
