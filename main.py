@@ -30,5 +30,4 @@ def password_params():
         selected_chars.extend(special_char_list)
 
 
-
 password_params()
