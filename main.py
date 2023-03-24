@@ -1,3 +1,5 @@
+import random
+
 nums_list = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 letters_list_upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I",
                       "J", "K", "L", "M", "N", "O", "P", "Q", "R",
@@ -5,7 +7,7 @@ letters_list_upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I",
 letters_list_lower = ["a", "b", "c", "d", "e", "f", "g", "h", "i",
                       "j", "k", "l", "m", "n", "o", "p", "q", "r",
                       "s", "t", "u", "v", "w", "x", "y", "z"]
-special_char_list = ["!", "@", "#", "$", "%", "&"]
+special_char_list = ["!", "@", "#", "$", "%", "&", "*", "/", "+", "=", "-", "~", "?"]
 selected_chars = []
 
 
@@ -34,14 +36,21 @@ def password_params():
 
 
 final_length = password_params()
-print(selected_chars)
+
 
 
 def generate_password(num):
+    user_password = ""
+    count = 0
+    while count < num:
+        count += 1
+        random_num = random.randint(0, len(selected_chars))
+        user_password += selected_chars[random_num]
+
+    print(f"Your password is: {user_password}")
 
 
-
-# generate_password(final_length)
+generate_password(final_length)
 
 
 
